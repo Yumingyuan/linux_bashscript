@@ -3,7 +3,7 @@ add()
 {
 	if [ "$1" -gt 0 -a "$2" -gt 0 ] 2>/dev/null;then
 		let result=$1+$2
-		echo "result:$result"
+		echo -e "\e[1;31mresult:\e[0m$result"
 	else
 		echo "not num" 
 	fi
