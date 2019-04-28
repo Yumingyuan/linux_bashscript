@@ -7,4 +7,4 @@ result1=`echo "obase=10;ibase=2;$result"|bc`
 echo -n "with out ibase's result:"
 echo "obase=10;$result"|bc
 echo -e "\e[1;31mresult:\e[0m"$result1
-
+echo "sqrt(100)|bc"#平方根计算
