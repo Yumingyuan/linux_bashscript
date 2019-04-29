@@ -7,3 +7,7 @@ cat <&3
 touch test_out_put.txt
 exec 4>test_out_put.txt
 echo -e "\e[1;31mnewline\e[0m">&4
+touch test_out_put.txt
+exec 5>>test_out_put.txt
+echo -e "\e[1;37msecond line\e[0m">&5
+
