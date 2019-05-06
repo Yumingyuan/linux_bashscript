@@ -1,0 +1,31 @@
+#!/bin/bash
+#计算命令花费时间
+start=$(date +%s)
+echo "hello!"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+echo -e "\e[1;31mhello\e[0m"
+end=$(date +%s)
+difference=$(( end - start ))
+echo "Time taken to execute is $difference seconds."
