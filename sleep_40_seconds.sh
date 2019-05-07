@@ -2,7 +2,7 @@
 #睡眠40s
 echo -n seconds:
 tput sc
-for count in `seq 0 10`
+for count in `seq 0 40`
 do
 	tput rc
 	tput ed
