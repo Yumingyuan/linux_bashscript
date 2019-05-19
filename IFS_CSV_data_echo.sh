@@ -3,7 +3,7 @@
 data=`cat /etc/passwd`
 echo "$data"
 #OLDIFS=$IFS
-#IFS="$"
+#IFS=":"
 for item in $data;
 do
 	echo "current item:"$item
