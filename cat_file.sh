@@ -10,4 +10,6 @@ function get_File()
 		exit 122
 	fi
 }
-
+echo -en "\e[1;31minput the file you want to read:\e[0m"
+read file_name
+get_File $file_name
