@@ -4,7 +4,7 @@ function get_File()
 {
 	if [ -e $1 ];
 	then
-		echo "file get:"|cat -n - $1
+		echo "file get:"|cat -ns - $1
 	else
 		echo "$1 does not exist!"
 		exit 122
