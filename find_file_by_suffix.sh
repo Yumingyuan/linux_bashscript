@@ -5,7 +5,7 @@ echo -en "\e[1;32minput the suffix wantto_search\e[0m:"
 read suffix
 if [ -d $dir ];
 then
-	echo $dir
+	find $dir -name "*.$suffix"
 else
 	exit 1
 fi
