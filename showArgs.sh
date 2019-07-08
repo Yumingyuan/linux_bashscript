@@ -1,7 +1,8 @@
 #!/bin/bash
-echo $@
-for i in `seq 1 $#`
-do echo $i is $1
-shift
+echo "parameter set:"$@ #输出参数列表
+for i in `seq 1 $#` #遍历所有参数
+do 
+echo $i "parameter" is $1
+shift #将参数左移动
 done
-echo $#
+#echo $#
