@@ -3,7 +3,7 @@
 echo -n "input string u want to encrypt:"
 read string
 encrypt_string=`echo $string|tr 'a-zA-Z' 'n-za-mN-ZA-M'`
-echo -n "encrypt string:"$encrypt_string
+echo -n "after encrypt "$string " to:"$encrypt_string
 decrypt_string=`echo $encrypt_string | tr 'n-za-mN-ZA-M' 'a-zA-Z'`
-echo -e "\ndecrypt string:"$decrypt_string
+echo -e "\nafter decrypt "$encrypt_string" to:"$decrypt_string
 
