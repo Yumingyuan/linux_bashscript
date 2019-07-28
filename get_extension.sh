@@ -9,5 +9,8 @@ echo ${file_new%.*}
 echo ${file_new%%.*}
 echo ${file_new#*.}
 echo ${file_new##*.}
-
-
+URL=www.google.com
+echo ${URL%.*}
+echo ${URL%%.*}
+echo ${URL#*.}
+echo ${URL##*.}
