@@ -6,4 +6,5 @@ extension=${file_jpg#*.}
 echo "Extension is:"$extension
 file_new=hack.fun.book.txt
 echo ${file_new%.*}
+echo ${file_new%%.*}
 
