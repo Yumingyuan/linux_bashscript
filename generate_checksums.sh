@@ -9,4 +9,5 @@ do
 #	echo $!
 done
 echo ${PIDARRAY[@]} #获取数组中所有数据
-wait ${PIDARRAY[@]} #等待数组中所有进程结束
+wait ${PIDARRAY[@]} #等待数组中所有进程结束,避免脚本已结束而md5sum仍然运行
+
