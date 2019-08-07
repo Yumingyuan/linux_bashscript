@@ -22,5 +22,5 @@ name1=name2;
 }'|sort -u > duplicate_files
 cat duplicate_files|xargs md5sum|sort|uniq -w 32|awk '{print $2}'|sort -u > unique_files
 echo Removing
-comm duplicate_files unique_files -3|tee /dev/strerr
+comm duplicate_files unique_files -23|tee /dev/strerr
 echo Removed duplicates file successful
