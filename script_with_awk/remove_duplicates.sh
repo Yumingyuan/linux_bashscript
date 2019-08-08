@@ -8,8 +8,8 @@ ls -lS --time-style=long-iso |awk 'BEGIN {
 	name2=$8;
 	if (size==$5)
 	{
-		"md5sum "name1; csum1=$1;
-		"md5sum "name2; csum2=$1;
+		"md5sum "name1|getline; csum1=$1;
+		"md5sum "name2|getline; csum2=$1;
 		if ( csum1==csum2 )
 		{
 			print name1;print name2
