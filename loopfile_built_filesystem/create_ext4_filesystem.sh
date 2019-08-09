@@ -6,8 +6,8 @@ echo "make file system oK!"
 if [ ! -d /mnt/loopback ];then
 	mkdir /mnt/loopback
 	mount -o loop loopbackfile.iso /mnt/loopback
-	echo "Mounted"
+	mount -l|grep "loopbackfile.iso"
 else
 	mount -o loop loopbackfile.iso /mnt/loopback
-	echo "Mounted"
+	mount -l|grep "loopbackfile.iso"
 fi
